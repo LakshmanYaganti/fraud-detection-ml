@@ -1,0 +1,2 @@
+# Trained model bundles (model.joblib) are written here by `python -m src.train`
+# and are gitignored — this placeholder just keeps the directory in the repo.

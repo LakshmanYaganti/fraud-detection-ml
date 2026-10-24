@@ -1,0 +1,88 @@
+{
+  "dataset": {
+    "rows": 284807,
+    "fraud": 492,
+    "fraud_rate": 0.00173,
+    "split": {
+      "train": 199364,
+      "val": 42721,
+      "test": 42722
+    }
+  },
+  "baseline_logreg": {
+    "validation": {
+      "threshold": 0.5,
+      "precision": 0.0671,
+      "recall": 0.8784,
+      "f1": 0.1246,
+      "roc_auc": 0.9683,
+      "pr_auc": 0.6302,
+      "confusion_matrix": {
+        "tn": 41743,
+        "fp": 904,
+        "fn": 9,
+        "tp": 65
+      }
+    },
+    "test": {
+      "threshold": 0.5,
+      "precision": 0.0669,
+      "recall": 0.8784,
+      "f1": 0.1243,
+      "roc_auc": 0.9677,
+      "pr_auc": 0.7923,
+      "confusion_matrix": {
+        "tn": 41741,
+        "fp": 907,
+        "fn": 9,
+        "tp": 65
+      }
+    }
+  },
+  "xgboost": {
+    "validation": {
+      "threshold": 0.5,
+      "precision": 0.9032,
+      "recall": 0.7568,
+      "f1": 0.8235,
+      "roc_auc": 0.9772,
+      "pr_auc": 0.8394,
+      "confusion_matrix": {
+        "tn": 42641,
+        "fp": 6,
+        "fn": 18,
+        "tp": 56
+      }
+    },
+    "test": {
+      "threshold": 0.5,
+      "precision": 0.8955,
+      "recall": 0.8108,
+      "f1": 0.8511,
+      "roc_auc": 0.9686,
+      "pr_auc": 0.8402,
+      "confusion_matrix": {
+        "tn": 42641,
+        "fp": 7,
+        "fn": 14,
+        "tp": 60
+      }
+    },
+    "chosen_threshold": 0.2916,
+    "validation_best_f1": 0.8406,
+    "test_at_validation_threshold": {
+      "threshold": 0.2916,
+      "precision": 0.8571,
+      "recall": 0.8108,
+      "f1": 0.8333,
+      "roc_auc": 0.9686,
+      "pr_auc": 0.8402,
+      "confusion_matrix": {
+        "tn": 42638,
+        "fp": 10,
+        "fn": 14,
+        "tp": 60
+      }
+    }
+  }
+}
